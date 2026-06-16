@@ -1,0 +1,80 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', Arial, sans-serif; background: #f9fafb; }
+
+.top-bar { background: #145a32; color: #d5f5e3; font-size: 13px; padding: 7px 0; }
+
+.hero {
+    height: 55vh;
+    background: linear-gradient(135deg, rgba(0,0,0,.55), rgba(20,90,50,.6)),
+        url('./image/bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex; align-items: center; justify-content: center;
+}
+.hero h1 { font-size: 52px; font-weight: 800; }
+.hero p { font-size: 20px; margin: 16px 0; }
+
+.sticky-filter { position: sticky; top: 56px; z-index: 100; }
+
+.products { width: 90%; margin: auto; padding: 40px 0; }
+
+.category-heading { margin: 50px 0 20px; padding-bottom: 12px; border-bottom: 3px solid #d5f5e3; }
+.category-heading h2 { font-size: 26px; font-weight: 700; color: #222; }
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,.08);
+    transition: .3s;
+    text-align: center;
+    position: relative;
+    border: none !important;
+}
+.card:hover { transform: translateY(-8px); box-shadow: 0 12px 30px rgba(0,0,0,.14); }
+
+.card img { width: 100%; height: 190px; object-fit: cover; }
+
+.stars { color: #f39c12; font-size: 14px; padding: 10px 0 2px; }
+
+.card h3 { margin: 8px 0 4px; font-size: 17px; font-weight: 700; }
+
+.card p { color: #198754; font-size: 17px; font-weight: 700; margin-bottom: 12px; }
+
+.card button {
+    background: #198754; color: white; border: none;
+    padding: 11px 20px; margin-bottom: 18px;
+    border-radius: 8px; cursor: pointer; font-size: 14px; font-weight: 600;
+    width: calc(100% - 30px); transition: .2s;
+}
+.card button:hover { background: #145a32; }
+
+.badge-label {
+    position: absolute; top: 10px; left: 10px;
+    font-size: 11px; font-weight: 700;
+    padding: 4px 10px; border-radius: 20px; z-index: 1;
+}
+.badge-label.hot { background: #dc3545; color: white; }
+.badge-label.new { background: #198754; color: white; }
+
+/* Footer */
+.footer-section { background: #0a2e1a; }
+.social-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 38px; height: 38px; border-radius: 50%;
+    background: rgba(255,255,255,.1); color: #fff;
+    text-decoration: none; transition: .3s; font-size: 16px;
+}
+.social-btn:hover { background: #198754; color: #fff; }
+
+@media (max-width: 768px) {
+    .hero h1 { font-size: 32px; }
+    .top-bar { font-size: 11px; }
+}

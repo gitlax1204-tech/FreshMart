@@ -1,0 +1,276 @@
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: 'Poppins', Arial, sans-serif; 
+}
+
+
+
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, rgba(0,0,0,.55), rgba(20,90,50,.6)),
+        url('./image/bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero h1 { 
+    font-size: 58px; 
+    font-weight: 800; 
+    line-height: 1.15; 
+}
+
+
+.hero p {
+     font-size: 20px; 
+     margin: 16px 0; 
+}
+
+
+
+.hero-stats { 
+    border-top: 1px solid rgba(255,255,255,.2); 
+    padding-top: 30px; 
+}
+
+
+.stat-item h3 { 
+    font-size: 2rem; 
+    font-weight: 800; 
+}
+
+
+
+.feature-item { 
+    padding: 10px; 
+}
+.feature-item i { 
+    display: block;
+}
+
+
+
+
+
+
+
+
+.section-badge {
+    background: #d5f5e3;
+    color: #198754;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 16px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+
+.section-badge-light {
+    background: rgba(255,255,255,.2);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 16px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+.card img { 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.category-card { 
+    border-radius: 16px !important; 
+    overflow: hidden; 
+    transition: .3s; 
+    cursor: pointer; 
+}
+
+
+.category-card:hover {
+     transform: translateY(-10px); 
+     box-shadow: 0 15px 35px rgba(0,0,0,.15) !important; 
+}
+
+.product-card { 
+    border-radius: 16px !important; 
+    overflow: hidden; 
+    transition: .3s; 
+    position: relative; 
+}
+
+
+.product-card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 35px rgba(0,0,0,.12) !important; 
+}
+
+
+.product-badge-new, .product-badge-hot {
+    position: absolute; 
+    top: 12px; 
+    left: 12px; 
+    z-index: 1;
+    font-size: 11px; 
+    font-weight: 700;
+    padding: 4px 10px; 
+    border-radius: 20px;
+}
+
+
+.product-badge-new { 
+    background: #198754; 
+    color: white; 
+}
+
+
+.product-badge-hot { 
+    background: #dc3545; 
+    color: white; 
+}
+
+
+
+
+/* Offer Section */
+.offer-section {
+    background: linear-gradient(135deg, #145a32, #1e8449);
+    padding: 60px 0;
+}
+
+
+.offer-box {
+    background: rgba(255,255,255,.12);
+    border: 2px solid rgba(255,255,255,.2);
+    color: white;
+    text-align: center;
+    padding: 45px 30px;
+    border-radius: 20px;
+    transition: .3s;
+    backdrop-filter: blur(5px);
+}
+
+
+.offer-box:hover {
+    transform: scale(1.05); 
+    background: rgba(255,255,255,.2); 
+}
+
+
+.offer-box h3 { 
+    font-size: 32px; 
+    font-weight: 800;
+}
+
+
+
+
+
+
+.testimonial-card { 
+    background: #f8fffe; 
+    border-left: 4px solid #198754; 
+}
+
+
+.avatar-circle {
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 18px; 
+    flex-shrink: 0;
+}
+
+
+
+
+
+.why-list li { 
+    padding: 8px 0; 
+    font-weight: 500; 
+    color: #444; 
+}
+
+
+.stat-box { 
+    transition: .3s; 
+}
+
+
+.stat-box:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 25px rgba(0,0,0,.1); 
+}
+
+
+
+
+
+
+.contact-icon {
+    width: 44px; 
+    height: 44px; 
+    border-radius: 50%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 18px; 
+    flex-shrink: 0;
+}
+.contact-form input, 
+.contact-form textarea { 
+    border: 1.5px solid #e0e0e0; 
+    border-radius: 10px; 
+    padding: 12px 16px; 
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus { 
+    border-color: #198754; 
+    box-shadow: 0 0 0 3px rgba(25,135,84,.1); 
+}
+
+
+.social-btn {
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+    width: 38px; 
+    height: 38px; 
+    border-radius: 50%;
+    background: rgba(255,255,255,.1); 
+    color: #fff;
+    text-decoration: none; 
+    transition: .3s; 
+    font-size: 16px;
+}
+.social-btn:hover { background: #198754; color: #fff; transform: translateY(-3px); }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 34px; }
+    .top-bar { font-size: 11px; }
+    .top-bar .d-flex { flex-direction: column; gap: 4px; text-align: center; }
+}
