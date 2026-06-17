@@ -279,7 +279,15 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .hero h1 { font-size: 34px; }
-    .top-bar { font-size: 11px; }
-    .top-bar .d-flex { flex-direction: column; gap: 4px; text-align: center; }
+    .hero h1 { 
+        font-size: 34px; 
+    }
+    .top-bar { 
+        font-size: 11px; 
+    }
+    .top-bar .d-flex {
+        flex-direction: column; 
+        gap: 4px; 
+        text-align: center; 
+    }
 }

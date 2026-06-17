@@ -38,21 +38,7 @@ body {
     margin: 16px 0; 
 }
 
-.timer-bar { 
-    background: #dc3545; 
-    font-size: 16px; 
-}
 
-
-.timer-box { 
-    font-size: 22px; 
-    font-weight: 800; 
-    letter-spacing: 3px; 
-    font-family: monospace; 
-    background: rgba(0,0,0,.3); 
-    padding: 2px 14px; 
-    border-radius: 6px; 
-}
 
 
 
@@ -238,7 +224,13 @@ body {
 
 
 @media (max-width: 768px) {
-    .hero h1 { font-size: 32px; }
-    .offer-title { font-size: 2rem; }
-    .top-bar { font-size: 11px; }
+    .hero h1 { 
+        font-size: 32px; 
+    }
+    .offer-title { 
+        font-size: 2rem; 
+    }
+    .top-bar { 
+        font-size: 11px; 
+    }
 }

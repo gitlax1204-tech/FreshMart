@@ -183,6 +183,10 @@ body {
 
 
 @media (max-width: 768px) {
-    .hero h1 { font-size: 32px; }
-    .top-bar { font-size: 11px; }
+    .hero h1 { 
+        font-size: 32px; 
+    }
+    .top-bar { 
+        font-size: 11px; 
+    }
 }
