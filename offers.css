@@ -214,6 +214,29 @@ body {
 
 
 
+
+
+.footer-section { 
+    background: #0a2e1a; 
+}
+
+.footer-links li { 
+    margin-bottom: 8px; 
+}
+
+.footer-links a { 
+    color: #aaa; 
+    text-decoration: none; 
+    transition: .2s; 
+}
+
+.footer-links a:hover { 
+    color: #5dbb7f; 
+}
+
+
+
+
 @media (max-width: 768px) {
     .hero h1 { font-size: 32px; }
     .offer-title { font-size: 2rem; }
